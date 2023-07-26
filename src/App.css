@@ -112,6 +112,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  text-align: right;
   box-sizing: border-box;
   padding: 20px;
   font-family: bold;
@@ -131,6 +132,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  text-align: right;
   box-sizing: border-box;
   padding: 20px;
   font-family: bold;
@@ -150,6 +152,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  text-align: right;
   box-sizing: border-box;
   padding: 20px;
   font-family: bold;
