@@ -1,0 +1,764 @@
+:root{
+  --Very-dark-desaturated-blue-main-background: hsl(222, 26%, 31%);
+  --Very-dark-desaturated-blue-toggle-background-keypad-background: hsl(223, 31%, 20%);
+  --Very-dark-desaturated-blue-screen-background: hsl(224, 36%, 15%);
+  /* #### Keys  */
+  --Desaturated-dark-blue-key-background: hsl(225, 21%, 49%);
+  --Desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%);
+  --Red-key-background-toggle: hsl(6, 63%, 50%);
+  --Dark-red-key-shadow: hsl(6, 70%, 34%);
+  --Light-orange-key-background: hsl(30, 25%, 89%);
+  --Grayish-orange-key-shadow: hsl(28, 16%, 65%);
+  /* #### Text  */
+  --Very-dark-grayish-blue: hsl(221, 14%, 31%);
+  --White: hsl(0, 0%, 100%);
+  /* ### Theme 2 */
+  /* #### Backgrounds */
+  --Light-gray-main-background: hsl(0, 0%, 90%);
+  --Grayish-red-toggle-background-keypad-background: hsl(0, 5%, 81%);
+  --Very-light-gray-screen-background: hsl(0, 0%, 93%);
+  /* #### Keys  */
+  --Dark-moderate-cyan-key-background: hsl(185, 42%, 37%);
+  --Very-dark-cyan-key-shadow: hsl(185, 58%, 25%);
+  --Orange-key-background-toggle: hsl(25, 98%, 40%);
+  --Dark-orange-key-shadow: hsl(25, 99%, 27%);
+  --Light-yellow-key-background: hsl(45, 7%, 89%);
+  --Dark-orange-key-shadow-b: hsl(35, 11%, 61%);
+  /* #### Text  */
+  --Very-dark-yellow: hsl(60, 10%, 19%);
+  --White-text: hsl(0, 0%, 100%);
+  /* ### Theme 3 */
+  /* #### Backgrounds */
+  --Very-dark-violet-main-background: hsl(268, 75%, 9%); 
+  --Very-dark-violet-toggle-background-keypad-background-screen-background: hsl(268, 71%, 12%);
+  /* #### Keys  */
+  --Dark-violet-key-background: hsl(281, 89%, 26%);
+  --Vivid-magenta-key-shadow: hsl(285, 91%, 52%);
+  --Pure-cyan-key-background-toggle: hsl(176, 100%, 44%);
+  --Soft-cyan-key-shadow: hsl(177, 92%, 70%);
+  --Very-dark-violet-key-background: hsl(268, 47%, 21%);
+  --Dark-magenta-key-shadow: hsl(290, 70%, 36%);
+  /* #### Text  */
+  --Light-yellow: hsl(52, 100%, 62%);
+  --Very-dark-blue: hsl(198, 20%, 13%); 
+  --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: normal;
+  src: url(./../public/font/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: bold;
+  src: url(./../public/font/Poppins-ExtraBold.ttf);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+   justify-content: center;
+   background-color: var(--Very-dark-desaturated-blue-main-background);
+   transition: .5s;
+}
+
+.bodyb{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  background-color: var(--Light-gray-main-background);
+  transition: .5s;
+}
+
+.bodyc{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  background-color: var(--Very-dark-violet-main-background);
+  transition: .5s;
+}
+
+.toggles{
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.input{
+  width: 35vw;
+  height: 90px;
+  border-radius: 10px;
+  background-color: var(--Very-dark-desaturated-blue-screen-background);
+  transition: .5s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: bold;
+  font-size: xx-large;
+  margin: 0;
+  letter-spacing: 6px;
+  color: white;
+}
+
+.inputb{
+  width: 35vw;
+  height: 90px;
+  border-radius: 10px;
+  background-color: var(--White);
+  transition: .5s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: bold;
+  font-size: xx-large;
+  margin: 0;
+  letter-spacing: 6px;
+  color: black;
+}
+
+.inputc{
+  width: 35vw;
+  height: 90px;
+  border-radius: 10px;
+  background-color: var(--Very-dark-violet-toggle-background-keypad-background-screen-background);
+  transition: .5s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 20px;
+  font-family: bold;
+  font-size: xx-large;
+  margin: 0;
+  letter-spacing: 6px;
+  color: var(--Light-yellow);
+}
+
+.toggle{
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.p{
+  font-family: normal;
+  color: var(--White);
+  font-size: x-large;
+  margin: 0;
+  transition: .5s;
+}
+
+.pb{
+  font-family: normal;
+  color: var(--Very-dark-yellow);
+  font-size: x-large;
+  margin: 0;
+}
+
+.pc{
+  font-family: normal;
+  color: var(--Light-yellow);
+  font-size: x-large;
+  margin: 0;
+  transition: .5s;
+}
+
+.h5{
+  font-family: normal;
+  color: var(--White);
+  text-transform: capitalize;
+  margin: 0;
+  padding-bottom: .2rem;
+  transition: .5s;
+}
+
+.h5b{
+  font-family: normal;
+    color: var(--Very-dark-yellow);
+    text-transform: capitalize;
+    margin: 0;
+    padding-bottom: .2rem;
+    transition: .5s;
+}
+
+.h5c {
+  font-family: normal;
+  color: var(--Light-yellow);
+  text-transform: capitalize;
+  margin: 0;
+  padding-bottom: .2rem;
+  transition: .5s;
+}
+
+.ballContainer{
+  background-color: var(--Very-dark-desaturated-blue-toggle-background-keypad-background);
+  width: 80px;
+  height: 30px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: .2rem;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.ball{
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: var(--Red-key-background-toggle);
+  cursor: pointer;
+  transition: .5s;
+  animation: forwards;
+}
+
+.ballb{
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: var(--Orange-key-background-toggle);
+  cursor: pointer;
+  transition: .5s;
+  animation: forwards;
+}
+.ballc{
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: var(--Pure-cyan-key-background-toggle);
+  cursor: pointer;
+  transition: .5s;
+  animation: forwards;
+}
+
+.ballContainerb{
+    background-color: var(--Grayish-red-toggle-background-keypad-background);
+    width: 80px;
+    height: 30px;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .2rem;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.ballContainerc {
+  background-color: var(--Very-dark-violet-toggle-background-keypad-background-screen-background);
+  width: 80px;
+  height: 30px;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: .2rem;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.nums{
+  display: flex;
+  flex-direction: row;
+  width: 73px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.keys{
+  width: 35vw;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: var(--Very-dark-desaturated-blue-screen-background);
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: .5s;
+}
+
+.keysb{
+    width: 35vw;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: var(--Grayish-red-toggle-background-keypad-background);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.keysc{
+    width: 35vw;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: var(--Very-dark-violet-toggle-background-keypad-background-screen-background);
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+.grid{
+  width: 100%;
+  box-sizing: border-box;
+  padding: .4rem;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 2px);
+  justify-items: center;
+  justify-content: space-around;
+  height: 80%;
+}
+
+.key{
+  width: 90px;
+  color: var(--Desaturated-dark-blue-key-shadow);
+  background-color: var(--Light-orange-key-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:  bold;
+  font-size: x-large;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: .5s;
+  border-bottom: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--Grayish-orange-key-shadow);
+}
+
+.keyb{
+  width: 90px;
+  color: var(--Desaturated-dark-blue-key-shadow);
+  background-color: var(--Light-yellow-key-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: bold;
+  font-size: x-large;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: .5s;
+  border-bottom: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--Dark-orange-key-shadow-b);
+}
+
+.keyc{
+  width: 90px;
+  color: var(--Light-yellow);
+  background-color: var(--Very-dark-violet-key-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: bold;
+  font-size: x-large;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: .5s;
+  border-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--Dark-magenta-key-shadow);
+}
+
+.del{
+  width: 90px;
+    color: var(--White);
+    background-color: var(--Desaturated-dark-blue-key-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: bold;
+    font-size: x-large;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: .5s;
+    border-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--Desaturated-dark-blue-key-shadow);
+}
+
+.delb{
+    width: 90px;
+    color: var(--White);
+    background-color: var(--Dark-moderate-cyan-key-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: bold;
+    font-size: x-large;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: .5s;
+    border-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--Very-dark-cyan-key-shadow);
+}
+
+.delc{
+    width: 90px;
+    color: var(--White);
+    background-color: var(--Vivid-magenta-key-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: bold;
+    font-size: x-large;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: .5s;
+    border-bottom: 4px;
+      border-bottom-style: solid;
+      border-bottom-color: var(--Desaturated-dark-blue-key-shadow);
+}
+
+.del:hover{
+  cursor: pointer;
+  background-color: var(--Desaturated-dark-blue-key-shadow);
+}
+
+.delb:hover {
+  cursor: pointer;
+  background-color: var(--Very-dark-cyan-key-shadow);
+}
+
+.delc:hover {
+  cursor: pointer;
+  background-color: var(--Desaturated-dark-blue-key-shadow);
+}
+
+.key:hover{
+  background-color: var(--Grayish-orange-key-shadow);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.keyb:hover {
+  cursor: pointer;
+  transition: .3s;
+  background-color: var(--Dark-orange-key-shadow-b);
+}
+
+.keyc:hover {
+  cursor: pointer;
+  transition: .3s;
+  background-color: var(--Dark-magenta-key-shadow);
+}
+.resetandequal{
+  width: 96%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--White);
+  font-family: bold;
+  font-size: x-large;
+}
+
+.reset{
+    width: 190px;
+    height: 56px;
+    background-color: var(--Desaturated-dark-blue-key-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: bold;
+    font-size: x-large;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: .5s;
+    border-bottom: 4px;
+      border-bottom-style: solid;
+      border-bottom-color: var(--Desaturated-dark-blue-key-shadow);
+}
+h5:hover{
+  cursor: pointer;
+}
+
+.resetb{
+  width: 190px;
+  height: 56px;
+  background-color: var(--Dark-moderate-cyan-key-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: bold;
+  font-size: x-large;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: .5s;
+  border-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--Very-dark-cyan-key-shadow);
+}
+
+.resetc{
+  width: 190px;
+  height: 56px;
+  background-color: var(--Vivid-magenta-key-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: bold;
+  font-size: x-large;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: .5s;
+  border-bottom: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--Desaturated-dark-blue-key-shadow);
+}
+
+.reset:hover{
+  cursor: pointer;
+    background-color: var(--Desaturated-dark-blue-key-shadow);
+}
+
+.resetb:hover {
+  cursor: pointer;
+  background-color: var(--Very-dark-cyan-key-shadow);
+}
+
+.resetc:hover {
+  cursor: pointer;
+  background-color: var(--Desaturated-dark-blue-key-shadow);
+}
+
+.equal{
+    width: 190px;
+    height: 56px;
+    background-color: var(--Red-key-background-toggle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: bold;
+    font-size: x-large;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: .5s;
+    border-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--Dark-red-key-shadow);
+}
+
+.equalb{
+  width: 190px;
+  height: 56px;
+  background-color: var(--Orange-key-background-toggle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: bold;
+  font-size: x-large;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: .5s;
+  border-bottom: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--Dark-orange-key-shadow);
+}
+
+.equalc{
+  width: 190px;
+  height: 56px;
+  background-color: var(--Pure-cyan-key-background-toggle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: bold;
+  font-size: x-large;
+  border-radius: 10px;
+  font-weight: 800;
+  transition: .5s;
+  border-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--Soft-cyan-key-shadow);
+}
+
+
+.equal:hover{
+  cursor: pointer;
+  background-color: var(--Dark-red-key-shadow);
+}
+
+.equalb:hover {
+  cursor: pointer;
+  background-color: var(--Dark-orange-key-shadow);
+}
+
+
+.equalc:hover {
+  cursor: pointer;
+  background-color: var(--Soft-cyan-key-shadow);
+}
+
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(4, 0.5fr);
+    max-width: 100%;
+  }
+
+  .toggles {
+    width: 80%;
+  }
+
+  .key {
+    width: 136px;
+    font-size: xx-large;
+  }
+
+  .keyb {
+    width: 136px;
+    font-size: xx-large;
+  }
+
+  .keyc {
+    width: 136px;
+    font-size: xx-large;
+  }
+
+  .input {
+    width: 90%;
+  }
+
+  .inputb {
+    width: 90%;
+  }
+
+  .inputc {
+    width: 90%;
+  }
+
+  .del {
+    width: 136px;
+    font-size: xx-large;
+  }
+
+  .delb {
+    width: 136px;
+      font-size: xx-large;
+  }
+
+  .delc {
+    width: 136px;
+      font-size: xx-large;
+  }
+
+  .keys {
+    width: 90%;
+  }
+
+  .keysb {
+    width: 90%;
+  }
+
+  .keysc {
+    width: 90%;
+  }
+
+  .resetandequal {
+    gap: 1rem;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(4, 0.5fr);
+    max-width: 100%;
+  }
+  .toggles{
+    width: 80%;
+  }
+  .key{
+    width: 65px;
+  }
+
+  .keyb{
+    width: 65px;
+  }
+  .keyc{
+    width: 65px;
+  }
+  .input{
+    width: 90%;
+  }
+  .inputb {
+  width: 90%;
+  }
+
+  .inputc {
+      width: 90%;
+  }
+  .del{
+    width: 60px;
+  }
+
+  .delb{
+      width: 60px;
+  }
+
+  .delc{
+      width: 60px;
+  }
+
+  .keys{
+    width: 90%;
+  }
+
+  .keysb{
+      width: 90%;
+  }
+
+  .keysc{
+      width: 90%;
+  }
+
+  .resetandequal{
+    gap: 1rem;
+  }
+}
+
+
