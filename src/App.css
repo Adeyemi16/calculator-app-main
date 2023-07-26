@@ -119,6 +119,7 @@ body{
   margin: 0;
   letter-spacing: 6px;
   color: white;
+  border: none;
 }
 
 .inputb{
@@ -137,6 +138,7 @@ body{
   margin: 0;
   letter-spacing: 6px;
   color: black;
+  border: none;
 }
 
 .inputc{
@@ -155,6 +157,7 @@ body{
   margin: 0;
   letter-spacing: 6px;
   color: var(--Light-yellow);
+  border: none;
 }
 
 .toggle{

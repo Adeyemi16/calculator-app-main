@@ -146,7 +146,12 @@ function App() {
           </div>
         </div>
       </div>
-      <div className={input}>{num.length === 0 ? result : num.join("")}</div>
+      <input
+        className={input}
+        type="text"
+        value={num.length === 0 ? result : num.join("")}
+        readOnly
+      />
 
       <div className={keys}>
         <div className="grid">
