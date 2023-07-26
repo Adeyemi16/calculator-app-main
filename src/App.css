@@ -677,16 +677,25 @@ h5:hover{
   .del {
     width: 136px;
     font-size: xx-large;
+    box-sizing: border-box;
+    padding: 2px;
+    font-size: x-large;
   }
 
   .delb {
     width: 136px;
       font-size: xx-large;
+      box-sizing: border-box;
+        padding: 2px;
+        font-size: x-large;
   }
 
   .delc {
     width: 136px;
       font-size: xx-large;
+      box-sizing: border-box;
+        padding: 2px;
+        font-size: x-large;
   }
 
   .keys {
