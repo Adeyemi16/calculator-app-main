@@ -1,35 +1,42 @@
-import React from 'react'
-import { useGlobalContext } from './context';
+import React from "react";
+import { useGlobalContext } from "../context/context";
 
 const Keys = () => {
-    const { toggle, handleClearClick, handleDelClick, handleDotClick, handleEqualClick, handleNumberClick, handleOperatorClick } = useGlobalContext();
+  const {
+    toggle,
+    handleClearClick,
+    handleDelClick,
+    handleDotClick,
+    handleEqualClick,
+    handleNumberClick,
+    handleOperatorClick,
+  } = useGlobalContext();
 
-    let key = ""
-    let del = ""
-    let reset = ""
-    let equal = ""
-    let keys =""
+  let key = "";
+  let del = "";
+  let reset = "";
+  let equal = "";
+  let keys = "";
 
-    if (toggle === 1) {
-      
-      keys = "keys";
-      key = "key";
-      del = "del";
-      reset = "reset";
-      equal = "equal";
-    } else if (toggle === 2) {
-      keys = "keysb";
-      key = "keyb";
-      del = "delb";
-      reset = "resetb";
-      equal = "equalb";
-    } else if (toggle === 3) {
-      keys = "keysc";
-      key = "keyc";
-      del = "delc";
-      reset = "resetc";
-      equal = "equalc";
-    }
+  if (toggle === 1) {
+    keys = "keys";
+    key = "key";
+    del = "del";
+    reset = "reset";
+    equal = "equal";
+  } else if (toggle === 2) {
+    keys = "keysb";
+    key = "keyb";
+    del = "delb";
+    reset = "resetb";
+    equal = "equalb";
+  } else if (toggle === 3) {
+    keys = "keysc";
+    key = "keyc";
+    del = "delc";
+    reset = "resetc";
+    equal = "equalc";
+  }
   return (
     <div className={keys}>
       <div className="grid">
@@ -92,6 +99,6 @@ const Keys = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Keys
+export default Keys;

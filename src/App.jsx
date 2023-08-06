@@ -1,9 +1,9 @@
 import "./App.css";
 import "./App.css";
-import Toggles from "./Toggles";
-import Input from "./Input";
-import Keys from "./Keys";
-import { useGlobalContext } from "./context";
+import Toggles from "./components/Toggles";
+import Input from "./components/Input";
+import Keys from "./components/Keys";
+import { useGlobalContext } from "./context/context";
 
 function App() {
   const { toggle } = useGlobalContext();
